@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Page</title>
+</head>
+<body>
+    <header>
+        <h1 class="main-title">Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <article>
+            <h2 id="home">Introduction</h2>
+            <p>This is a sample HTML document that includes various elements.</p>
+        </article>
+        
+        <aside>
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/">W3Schools HTML</a></li>
+                <li><a href="https://www.w3schools.com/css/default.asp">W3Schools CSS</a></li>
+            </ul>
+        </aside>
+        
+        <section>
+            <h2 id="about">About Us</h2>
+            <p>We provide web development tutorials and resources.</p>
+        </section>
+        
+        <section>
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"><br><br>
+                    
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob"><br><br>
+                    
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+                    
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </fieldset>
+            </form>
+        </section>
+        
+        <section>
+            <h2>Sample Table</h2>
+            <table border="5">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Rahul Jain</td>
+                    <td>30</td>
+                    <td>Jaipur</td>
+                </tr>
+                <tr>
+                    <td>Misha Patel</td>
+                    <td>25</td>
+                    <td>Surat</td>
+                </tr>
+                <tr>
+                    <td>Akash Jadhav</td>
+                    <td>35</td>
+                    <td>Mumbai</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

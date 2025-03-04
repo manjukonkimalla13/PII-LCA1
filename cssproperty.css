@@ -1,0 +1,146 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+
+.float-box {
+  width: 30%;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  background: lightblue;
+}
+
+
+.fixed-box {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: orange;
+  padding: 10px;
+  color: white;
+}
+
+.relative-box {
+  position: relative;
+  left: 20px;
+  background: lightgreen;
+  padding: 10px;
+}
+
+
+.columns {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+
+.block-box {
+  display: block;
+  background: coral;
+  padding: 10px;
+}
+.inline-box {
+  display: inline;
+  background: cyan;
+  padding: 5px;
+}
+.inline-block-box {
+  display: inline-block;
+  background: violet;
+  padding: 10px;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ddd;
+  padding: 20px;
+}
+.flex-item {
+  background: #3498db;
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background: #eee;
+  padding: 10px;
+}
+.grid-item {
+  background: rgb(122, 84, 77);
+  padding: 20px;
+  text-align: center;
+}
+
+
+a:hover {
+  color: rgb(23, 11, 87);
+}
+input:focus {
+  border: 2px solid rgb(244, 200, 216);
+}
+
+
+p::first-letter {
+  font-size: 2em;
+  color: navy;
+}
+
+
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.transform-box {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  transform: rotate(45deg);
+}
+
+
+.transition-box {
+  width: 100px;
+  height: 100px;
+  background: rgb(120, 238, 249);
+  transition: background 0.5s ease;
+}
+.transition-box:hover {
+  background: rgb(102, 247, 136);
+}
+
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+.animated-box {
+  width: 100px;
+  height: 100px;
+  background: rgb(255, 0, 0);
+  animation: bounce 1s infinite;
+}
